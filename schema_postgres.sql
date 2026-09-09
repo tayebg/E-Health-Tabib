@@ -1,4 +1,4 @@
--- PostgreSQL Schema for E-Health / Tabib App
+-- PostgreSQL Schema for E-Health App
 
 -- 1. Table Admin
 CREATE TABLE IF NOT EXISTS admin (

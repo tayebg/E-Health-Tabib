@@ -10,7 +10,7 @@ db.type=postgresql
 db.host=localhost
 db.port=5432
 
-# Database Name (default: postgres, tabib, or ehealth)
+# Database Name (default: postgres or ehealth)
 db.name=postgres
 
 # Database User and Password

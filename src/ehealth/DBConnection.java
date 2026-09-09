@@ -15,7 +15,7 @@ public class DBConnection {
     private static boolean initialized = false;
 
     // PostgreSQL connection profiles
-    private static final String[] PG_DATABASES = {"tabib", "ehealth", "postgres"};
+    private static final String[] PG_DATABASES = {"ehealth", "postgres"};
     private static final String[][] PG_CREDENTIALS = {
         {"postgres", "postgres"},
         {"postgres", "admin"},
@@ -27,10 +27,9 @@ public class DBConnection {
     };
 
     // MySQL connection profiles
-    private static final String[] MY_DATABASES = {"tabib", "ehealth"};
+    private static final String[] MY_DATABASES = {"ehealth"};
     private static final String[][] MY_CREDENTIALS = {
         {"root", ""},
-        {"Tabib", "abc123"},
         {"root", "root"},
         {"root", "123456"},
         {"root", "1234"}
@@ -43,7 +42,7 @@ public class DBConnection {
             String type = props.getProperty("db.type", "postgresql").trim().toLowerCase();
             String host = props.getProperty("db.host", "localhost").trim();
             String port = props.getProperty("db.port", type.equals("postgresql") ? "5432" : "3306").trim();
-            String name = props.getProperty("db.name", "tabib").trim();
+            String name = props.getProperty("db.name", "ehealth").trim();
             String user = props.getProperty("db.user", type.equals("postgresql") ? "postgres" : "root").trim();
             String pass = props.getProperty("db.password", "").trim();
 
@@ -120,7 +119,7 @@ public class DBConnection {
         } catch (ClassNotFoundException ignored) {}
 
         // 5. Final fallback connection attempt
-        return DriverManager.getConnection("jdbc:postgresql://localhost:5432/tabib", "postgres", "postgres");
+        return DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "postgres");
     }
 
     private static Properties loadProperties() {
