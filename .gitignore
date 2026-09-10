@@ -6,3 +6,4 @@ Thumbs.db
 *.tmp
 *.log
 project_djebril/
+db.properties
