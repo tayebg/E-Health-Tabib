@@ -15,7 +15,12 @@ A Java desktop application for healthcare management. "Tabib" (طبيب) means "
 
 ## Tech Stack
 
-Java SE 21, Java Swing / AWT, SwingX, PostgreSQL, MySQL, JDBC
+- Java SE 21
+- Java Swing / AWT
+- SwingX
+- PostgreSQL
+- MySQL
+- JDBC
 
 ## Project Structure
 
@@ -38,19 +43,23 @@ E-Health-Tabib/
 ## Getting Started
 
 ### Prerequisites
+
 - JDK 21+
 - PostgreSQL (optional — app works in demo mode without it)
 
 ### Database Setup
+
 1. Copy `db.properties.example` to `db.properties`
 2. Edit with your database credentials
 3. The application auto-creates tables on first run
 
 ### Build & Run
+
 - **Windows**: `run.bat`
 - **Manual**: `javac -d bin -cp "bin;lib/*" src\ehealth\*.java` then `java -cp "bin;lib/*" ehealth.PreLoginPage`
 
 ### Demo Mode
+
 If no database is configured, the app runs with sample data.
 
 ## Default Credentials
@@ -63,16 +72,16 @@ If no database is configured, the app runs with sample data.
 
 ## Screenshots
 
-Note that application screenshots are available in `docs/application-screenshots.pdf` (9 pages covering all screens).
+Application screenshots are available in [`docs/application-screenshots.pdf`](docs/application-screenshots.pdf) (9 pages covering all screens).
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements.
+Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
-MIT License
+This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Tayeb Bekkouche — https://github.com/tayebg
+[Tayeb Bekkouche](https://github.com/tayebg)
